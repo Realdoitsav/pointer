@@ -1,35 +1,35 @@
 :root {
-  --bg: #e9edf5;
-  --surface: #ffffff;
-  --ink: #18202f;
+  --bg: #ffffff;
+  --surface: #09f395;
+  --ink: #37a60f;
   --muted: #667289;
-  --line: #d3d9e6;
-  --accent: #2c55f5;
-  --accent-ink: #ffffff;
-  --danger: #c23a3a;
+  --line: #09e334;
+  --accent: #30bc01;
+  --accent-ink: #000000;
+  --danger: #3a73c2;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #131826;
-    --surface: #1b2234;
-    --ink: #e8ecf6;
-    --muted: #96a1b8;
-    --line: #2d3650;
+    --surface: #000000;
+    --ink: #06b463;
+    --muted: #05812a;
+    --line: #176244;
     --accent: #6f8dff;
     --accent-ink: #0e1424;
-    --danger: #ff7b7b;
+    --danger: #7bb2ff;
   }
 }
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  font-family: var(--font);
+  font-family: var(--tahoma);
   background: var(--bg);
-  color: var(--ink);
+  color: var(--ink);background-color:rgb(219, 18, 18) ;
   line-height: 1.5;
   min-height: 100vh;
-  padding: 3rem 1rem;
+  padding: 4rem 3rem;
 }
 .app {
   max-width: 34rem;
@@ -42,12 +42,12 @@ body {
 h1 {
   margin: 0 0 1rem;
   font-size: clamp(34, 2px, 4.9rem);
-  font-weight: 800;
+  font-weight: 1000;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 h1 #remaining-label {
-  font-size: 0.4em;
+  font-size: 0.9em;
   font-weight: 700;
   letter-spacing: -0.01em;
   color:palegreen var(--muted);
